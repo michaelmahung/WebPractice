@@ -5,16 +5,67 @@
 </head>
 
 <body>
-	<form action="">
-		<p>Enter Username:
-			<input type="text" name="username" size="20" maxlength="20"/>
-		</p>
+	<form action="/action.php">
+		<fieldset>
+			<legend>First and Last Names</legend>
+			First Name:<br /> <input type="text" name"firstName"><br />
+			Last Name:<br /> <input type="text" name="lastName"><br /><br />
+			<input type="submit" name="Submit">
+		</fieldset>
 	</form>
+	
 	<form action="">
-		<p>Enter Password:
-			<input type="password" name="password" size="20" maxlength="20"/>
-		</p>
+		<p>This is a text area: </p>
+		<textarea name-"text" cols="40" rows="10">Text area</textarea>
 	</form>
+	
+	<form action="">
+		<p>Radio Buttons</p>
+		<input type="radio" name="selection" value="A"/>A
+		<input type="radio" name="selection" value="B"/>B
+		<input type="radio" name="selection" value="C"/>C
+		<input type="radio" name="selection" value="D"/>D
+		<input type="radio" name="selection" value="F"/>F
+	</form>
+		
+	<form action="">
+		<p>Checkboxes
+		<input type="checkbox" name="selection" value="1"/>1
+		<input type="checkbox" name="selection" value="2"/>2
+		<input type="checkbox" name="selection" value="3"/>3
+		<input type="checkbox" name="selection" value="4"/>4
+		<input type="checkbox" name="selection" value="5"/>5
+	</p>
+	</form>
+	
+	<form action="">
+		<p>Please pick the superior pet</p>
+		<select name="pets">
+			<option value="other">Other</option>
+			<option value="cat">Cat</option>
+			<option value="dog">Dog</option>
+			<option value="rat">Rat</option>
+			<option value="meerkat">Meerkat</option>
+		</select>
+	</form>
+	
+	<form action="">
+		<p>Select your favorite number (may select more than 1)</p>
+		<select name="numbers" size=6 multiple="multiple">
+			<option value="12">12</option>
+			<option value="31">31</option>
+			<option value="42">42</option>
+			<option value="58">58</option>
+			<option value="183">183</option>
+			<option value="5000">5000</option>
+		</select>
+	</form>
+	
+	<form action="">
+		<button><img src="http://www.newdesignfile.com/postpic/2009/09/go-button-icon_286699.png" alt="button" width="101" height="101"/></button>
+		<input type="hidden" name="press button" value="button!"/>
+	</form>
+	
 </body>
 
 </html>
